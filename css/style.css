@@ -12,6 +12,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-family: var(--font-family-p);
   overflow-x: hidden;
+  color: #2e2e30;
 }
 
 h1,
@@ -70,11 +71,11 @@ h6 {
 }
 
 .home-content h1 {
-    font-size: 3em;
-    letter-spacing: 2px;
-    line-height: 1.3em;
-    color: #474747;
-  }
+  font-size: 3em;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+  color: #474747;
+}
 
 .home-content {
   margin-top: 150px;
@@ -86,18 +87,42 @@ h6 {
   margin-top: 150px;
 }
 
+/* about us section */
+.img-box-about img {
+  height: 300px;
+  border-radius: 20px;
+  border: 1px dashed #858383;
+  padding: 10px;
+}
 
+.food img {
+  margin-left: 100px;
+  height: 120px;
+  animation: review-animation 8s infinite linear;
+}
 
-
+@keyframes review-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 0);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+}
 
 /* make image responsive on small device */
 @media (max-width: 600px) {
   .home-content {
-      margin-top: 40px;
+    margin-top: 40px;
   }
   .img-box img {
     display: none;
   }
+
+  /* .img-box-about img {
+      height: 200px;
+  } */
 }
-
-
