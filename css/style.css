@@ -113,6 +113,83 @@ h6 {
   }
 }
 
+/* services */
+.services {
+  background-color: #0b0320;
+  color: white;
+  padding: 20px;
+}
+
+.services-box {
+  animation: service-two-animation 10s infinite linear;
+  height: 350px;
+  margin-left: 100px;
+}
+
+@keyframes service-two-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* =========================== faq questions ==================== */
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-list li {
+  margin: 30px 0;
+  border: 1px solid rgb(205, 205, 205);
+  padding: 12px 15px;
+  margin: 0px auto 30px;
+  text-align: left;
+  width: 250px;
+  background-color: white;
+  color: #0b0320;
+  border-radius: 10px;
+}
+
+.faq-list .faq-heading::before {
+  content: "+";
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-weight: 900;
+  color: #c2c2c2;
+}
+
+.faq-list .the-active .faq-heading::before {
+  content: "-";
+}
+
+.faq-heading {
+  position: relative;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.faq-heading:hover {
+  color: var(--color-primary);
+}
+
+.faq-text {
+  display: none;
+  font-size: 10px;
+}
+
+/* =============================================== */
+
 /* make image responsive on small device */
 @media (max-width: 600px) {
   .home-content {

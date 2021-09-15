@@ -133,11 +133,95 @@
             </div>
         </div>
     </section>
+
+    <!-- about section start -->
+    <section class="services">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Services</h6>
+                    <h2 class="mt-2">Restant Services</h2>
+                    <p class="mt-1">
+                        Restaurants range from inexpensive and informal lunching or dining places catering to people
+                        working
+                        nearby, with modest food served in simple settings at low prices.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="services-questions mt-4">
+                                <ul class="faq-list">
+                                    <li>
+                                        <h4 class="faq-heading">01. Freshy Healthy Food</h4> 
+                                        <p class="read faq-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam,
+                                            felis quis
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4 class="faq-heading"> 02. Clean Environment</h4>
+                                        <p class="read faq-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam,
+                                            felis quis
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4 class="faq-heading"> 03. Free Home delivery</h4>
+                                        <p class="read faq-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam,
+                                            felis quis
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="services-questions mt-4">
+                                <ul class="faq-list">
+                                    <li>
+                                        <h4 class="faq-heading">04. Freshy Healthy Food</h4> 
+                                        <p class="read faq-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam,
+                                            felis quis
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4 class="faq-heading"> 05. Clean Environment</h4>
+                                        <p class="read faq-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam,
+                                            felis quis
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4 class="faq-heading"> 06. Free Home delivery</h4>
+                                        <p class="read faq-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam,
+                                            felis quis
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/service1.png" alt="" class="services-box">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- about section end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.faq-heading').click(function () {
 
+                $(this).parent('li').toggleClass('the-active').find('.faq-text').slideToggle();
+            });
+        })
+    </script>
 </body>
 
 </html>
