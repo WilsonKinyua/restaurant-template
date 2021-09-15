@@ -40,6 +40,10 @@ h6 {
   background-color: transparent;
 }
 
+.color-primary {
+  color: var(--color-primary);
+}
+
 /* navbar */
 .navbar {
   box-shadow: 0px 0px 20px 0px #dddddd8c;
@@ -189,6 +193,67 @@ h6 {
 }
 
 /* =============================================== */
+
+/* download section */
+
+.download-app {
+  animation: download-animation 3s infinite linear;
+}
+@keyframes download-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* ========= download list steps ==============*/
+.download-content li {
+  list-style-type: none;
+  display: block;
+  padding: 20px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 0px #dddddd52;
+  box-shadow: 0px 0px 20px 0px #dddddd52;
+  margin-bottom: 30px;
+  max-width: 390px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #0b0320;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  border: 1px solid transparent;
+}
+
+.download-content li:hover {
+  border: 1px solid #ffbe00;
+}
+
+.download-content li span {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ffbe00;
+  color: #0b0320;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 25px;
+  margin-right: 15px;
+  -webkit-box-shadow: 0px 0px 20px 0px #dddddd52;
+  box-shadow: 0px 0px 20px 0px #dddddd52;
+}
+
+.app-icons:hover {
+  transform: scale(1.1);
+}
+/* ==========download list steps end ================= */
 
 /* make image responsive on small device */
 @media (max-width: 600px) {
