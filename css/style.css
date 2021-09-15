@@ -255,6 +255,24 @@ h6 {
 }
 /* ==========download list steps end ================= */
 
+/* reservation section */
+.reservation {
+  background-color: #0b0320;
+  color: white;
+  border-bottom-right-radius: 20px;
+}
+
+.reservation img {
+  height: 400px;
+  animation: service-two-animation 10s infinite linear;
+  margin-left: 30px;
+}
+
+.reserve-date-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
 /* make image responsive on small device */
 @media (max-width: 600px) {
   .home-content {
